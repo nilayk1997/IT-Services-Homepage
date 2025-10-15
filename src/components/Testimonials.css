@@ -1,0 +1,117 @@
+#testimonials {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+#testimonials h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--text-muted, #777);
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: var(--card-bg, #fff);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonial-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid var(--accent, #0077ff);
+}
+
+.testimonial-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#testimonials .testimonial-header span {
+    font-size: 0.9rem;
+    color: var(--text-muted, #888);
+}
+
+#testimonials .testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text, #222);
+    font-style: italic;
+}
+
+/* Dark mode support */
+[data-theme="dark"] #testimonials .testimonial-card {
+    background: #313131;
+    color: #eee;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] #testimonials .testimonial-header span {
+    color: #aaa;
+}
+
+/* Animation */
+.testimonial-card {
+    opacity: 0;
+    animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #testimonials {
+        padding: 60px 15px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-header img {
+        width: 50px;
+        height: 50px;
+    }
+}
