@@ -11,7 +11,7 @@ export default function Navbar({ toggleTheme, theme }) {
         <nav className="navbar">
             <div className="nav-container">
                 <div className="logo">
-                    <h2>TechNova IT</h2>
+                    <h2><a href="/">TechNova IT</a></h2>
                 </div>
 
                 {/* Hamburger */}
@@ -27,7 +27,9 @@ export default function Navbar({ toggleTheme, theme }) {
                     <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
                     <li><a href="#services" onClick={() => setIsOpen(false)}>Services</a></li>
                     <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
-                    <li><a href="#testimonials" onClick={() => setIsOpen(false)}>Testimonials</a></li>
+                    <li>
+                        <a href="#testimonialCarousel" onClick={() => setIsOpen(false)}>Testimonials</a>
+                    </li>
                     <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
                 </ul>
                 <ThemeToggle toggleTheme={toggleTheme} theme={theme} />

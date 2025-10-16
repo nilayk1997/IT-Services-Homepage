@@ -3,7 +3,7 @@ import "./Hero.css";
 
 export default function Hero() {
     return (
-        <section className="hero">
+        <section className="hero" id="hero">
             <div className="hero-content">
                 <h1>Empowering Businesses with Cutting-Edge IT Solutions</h1>
                 <p>We deliver innovative technology that drives success and growth.</p>
