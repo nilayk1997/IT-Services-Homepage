@@ -21,7 +21,7 @@
 /* Carousel Container */
 .carousel-container {
     position: relative;
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
     overflow: hidden;
     padding: 40px 20px;
@@ -34,7 +34,7 @@
 }
 
 /* Optional: animated gradient */
-/*
+
 .carousel-container {
   background: linear-gradient(270deg, #0077ff, #00d4ff, #0077ff);
   background-size: 600% 600%;
@@ -46,7 +46,7 @@
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
-*/
+
 
 /* Slides */
 .carousel-slide {
@@ -107,7 +107,7 @@
 
 /* Feedback text */
 .testimonial-text {
-    font-size: 0.95rem;
+    font-size: 1em;
     line-height: 1.6;
     color: #f0f0f0;
     font-style: italic;
